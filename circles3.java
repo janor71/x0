@@ -13,25 +13,30 @@ void setup() {
 }
 
 void draw() {
+  fill(242,219,210);
   ellipse(200, 200, 100, 100);
+  fill(0);
+  ellipse(x-75,y-60,10,20);   // ADD EYES TO FIGURE
+  ellipse(x-25,y-60,10,20);
+  ellipse(x-50,y-40,5,10);
   textAlign(CENTER,CENTER);
-  text("DRAFT", 175, 175); 
-  stroke(10);
-  textSize(15);
+  fill(0);
+  textSize(10);
+  text("DRAFT PANDA", x-50, y+90); // NAME THE POSSIBLE FIGURE
 
 }
-// it will add shapes for a draft 
+// it will add shapes for a draft // NOT SURE IF THIS IS HAPPENING
 void mousePressed() { 
   ellipse(150, 150, 50, 50);
   ellipse(250,150,50,50);
   rectMode(CENTER);
-  rect(200,290,w/3 ,h);
+  rect(200,290,w/3 ,h); 
   stroke(10);
   }
-// it will change collor, pressed mouse and it will add shapes again. 
+ //> THIS IS NOT LONGER HAPPENING THOUGH?// it will change collor, pressed mouse and it will add shapes again. 
 void keyPressed() {
  background(225, 205, 10);
- background(255, 200, 0);
+ background(208, 185, 232); // CHANGED COLOR TO BACKGROUND.
 
 }
 
